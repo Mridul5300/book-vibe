@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -11,24 +11,29 @@ const Navbar = () => {
                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                               </div>
                               <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                   <li><a>Item 1</a></li>
-                                   <li>
-                                        <a>Parent</a>
-                                   </li>
-                                   <li><a>Item 3</a></li>
-                              </ul>
-                         </div>
-                         <a className="btn btn-ghost text-xl">Book Vibe</a>
-                    </div>
-                    <div className="navbar-center hidden lg:flex">
-                         <ul className="menu menu-horizontal item-center gap-3 px-1">
-                              <NavLink to='/home' className={({isActive}) => isActive ? ' hover:bg-primary font-bold' : 'font-bold'}>
+                              <NavLink to='/' className={({isActive}) => isActive ? ' hover:bg-primary font-bold' : 'font-bold'}>
                                    Home
                               </NavLink>
                               <NavLink to='/booklist' className={({isActive}) => isActive ? ' hover:bg-primary font-bold' : 'font-bold'}>
                                    Listed Books
                               </NavLink>
                               <NavLink to='/readpage' className={({isActive}) => isActive ? ' hover:bg-primary font-bold' : 'font-bold'}>
+                                   Pages to Read
+                              </NavLink>
+
+                              </ul>
+                         </div>
+                         <Link to="/" className="btn btn-ghost text-xl">Book Vibe</Link>
+                    </div>
+                    <div className="navbar-center hidden lg:flex">
+                         <ul className="menu menu-horizontal item-center gap-3 px-1">
+                              <NavLink to='/' className={({isActive}) => isActive ? ' text-primary font-bold' : 'font-bold'}>
+                                   Home
+                              </NavLink>
+                              <NavLink to='/booklist' className={({isActive}) => isActive ? ' text-primary font-bold' : 'font-bold'}>
+                                   Listed Books
+                              </NavLink>
+                              <NavLink to='/readpage' className={({isActive}) => isActive ? ' text-primary font-bold' : 'font-bold'}>
                                    Pages to Read
                               </NavLink>
 

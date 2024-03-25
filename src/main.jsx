@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Route from './Components/Route.jsx';
 import Home from './Components/NavBar/Pages.jsx/Home/Home.jsx';
-import Navbar from './Components/NavBar/Navbar.jsx';
+
 import Booklisted from './Components/NavBar/Pages.jsx/List Book/Booklisted.jsx';
 import Readpage from './Components/NavBar/Pages.jsx/ReadBooks/Readpage.jsx';
 
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Navbar />,
+        element:<Home />,
       },
       {
         path:"/booklist",
