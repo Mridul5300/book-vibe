@@ -1,26 +1,26 @@
-import { json } from "react-router-dom"
 
-
-export const getcards = () => {
-     let cards = []
+export const getReadcard = () => {
+     
      const storedcards = localStorage.getItem('cards')
       
-     if(cards) {
-          cards = JSON.parse(storedcards)
+     if(storedcards) {
+          return JSON.parse(storedcards)
      }
 
-     return cards
+     return []
 }
 
-export const setcards = card => {
-     let cards = getcards ()
-     const isExist = cards.find(c => c.bookId === card.bookId)
-
-     if (isExist) {
-          return alert("all ready aded")
+export const saveCards = bookId => {
+     let cardread = getReadcard ()
+     const isExist = cardread.find(newCard => newCard  === bookId)
+          // console.log(isExist);
+     if (!isExist) {
+         alert("all ready aded")
+         return
      }
 
-     cards.push (card)
-     localStorage.setItem('cards', JSON.stringify(cards))
+     cardread.push (bookId)
+     localStorage.setItem('cards', JSON.stringify(cardread))
      alert('added succed')
+
 }

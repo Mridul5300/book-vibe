@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { setcards } from "../../../../../Utitlity";
+import { saveCards } from "../../../../../Utitlity";
+
 
 const CardDetail = () => {
      const homecard = useLoaderData();
@@ -10,9 +11,9 @@ const CardDetail = () => {
         const {tags} =cards
      //    console.log(tags);
 
-          const handleReadMark = cards => {
+          const handleReadMark = () => {
                // console.log(cards);
-               setcards(cards)
+               saveCards(bookId)
           }
 
      return (
