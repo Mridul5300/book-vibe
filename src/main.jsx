@@ -12,6 +12,7 @@ import Home from './Components/NavBar/Pages.jsx/Home/Home.jsx';
 
 import Booklisted from './Components/NavBar/Pages.jsx/List Book/Booklisted.jsx';
 import Readpage from './Components/NavBar/Pages.jsx/ReadBooks/Readpage.jsx';
+import CardDetail from './Components/NavBar/Pages.jsx/Home/Card Detail/CardDetail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
       {
         path:"/readpage",
         element:<Readpage />
+      },
+      {
+        path:'/homecard/:bookId',
+        element:<CardDetail />,
+        loader:() => fetch('../Card.json')
       }
 
     ]

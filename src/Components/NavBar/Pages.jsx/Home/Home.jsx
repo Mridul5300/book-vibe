@@ -4,13 +4,13 @@ import HomeCard from "./HomeCard";
 
 const Home = () => {
 
-	const[Cards, setcards] =useState([])
+	const[Cards, setcards] =useState([]);
 
 	useEffect(() => {
 		fetch("Card.json")
 		.then(res => res.json())
 		.then(data => setcards(data))
-	},[])
+	},[]);
 
 	return (
 		<div>
