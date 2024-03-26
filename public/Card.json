@@ -8,7 +8,7 @@
        "totalPages": 180,
        "rating": 4.5,
        "category": "Fiction",
-       "tags": ["Classic", "Romance"],
+       "tags": ["Young Adult", "Identity"],
        "publisher": "Charles Scribner's Sons",
        "yearOfPublishing": 1925
      },
@@ -21,7 +21,7 @@
        "totalPages": 281,
        "rating": 4.8,
        "category": "Fiction",
-       "tags": ["Classic", "Coming-of-age"],
+       "tags": ["Young Adult", "Identity"],
        "publisher": "J. B. Lippincott & Co.",
        "yearOfPublishing": 1960
      },
@@ -34,7 +34,7 @@
        "totalPages": 224,
        "rating": 4.3,
        "category": "Fiction",
-       "tags": ["Classic", "Bildungsroman"],
+       "tags":["Young Adult", "Identity"],
        "publisher": "Little, Brown and Company",
        "yearOfPublishing": 1951
      },
@@ -47,7 +47,7 @@
        "totalPages": 328,
        "rating": 4.7,
        "category": "Fiction",
-       "tags": ["Dystopian", "Political fiction"],
+       "tags":["Young Adult", "Identity"],
        "publisher": "Secker & Warburg",
        "yearOfPublishing": 1949
      },
@@ -60,7 +60,7 @@
        "totalPages": 310,
        "rating": 4.6,
        "category": "Fantasy",
-       "tags": ["Adventure", "High fantasy"],
+       "tags": ["Young Adult", "Identity"],
        "publisher": "George Allen & Unwin",
        "yearOfPublishing": 1937
      },
@@ -73,7 +73,7 @@
        "totalPages": 279,
        "rating": 4.4,
        "category": "Fiction",
-       "tags": ["Romance", "Satire"],
+       "tags":["Young Adult", "Identity"],
        "publisher": "T. Egerton, Whitehall",
        "yearOfPublishing": 1813
      },
@@ -99,7 +99,7 @@
             "totalPages": 320,
             "rating": 4.9,
             "category": "Fantasy",
-            "tags": ["Magic", "Adventure"],
+            "tags": ["Young Adult", "Identity"],
             "publisher": "Bloomsbury Publishing",
             "yearOfPublishing": 1997
           },
@@ -112,7 +112,7 @@
             "totalPages": 432,
             "rating": 4.8,
             "category": "Fantasy",
-            "tags": ["Adventure", "Quest"],
+            "tags": ["Young Adult", "Identity"],
             "publisher": "Allen & Unwin",
             "yearOfPublishing": 1954
           }

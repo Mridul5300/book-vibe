@@ -31,10 +31,10 @@ const Home = () => {
 				</div>
 			</section>
 
-			{/* Card section */}
-			<h2 className="text-center text-5xl">Books{Cards.length}</h2>
+			{/* Card Title */}
+			<h2 className="text-center text-5xl">Books</h2>
 			{/* cards */}
-		<div className="">
+		<div className="grid grid-rows-1 md:grid-cols-3 gap-3 mt-10 md:mx-11 mx-10 ">
 			{
 				Cards.map(card => <HomeCard key={card.bookId} card={card}></HomeCard>)
 			}

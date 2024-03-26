@@ -1,21 +1,30 @@
+import PropTypes from 'prop-types';
+
 const HomeCard = ({ card }) => {
-     const{bookName,image}=card;
+     const{bookName,image,tags,author,category,rating}=card;
      return (
 
-          <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="card card-compact  bg-base-100 border rounded-lg">
                <figure><img src={image} alt="Shoes" /></figure>
-               <div className="flex">
-                    
-               </div>
+                    <p className="flex justify-evenly text-green-500" >
+                        {
+                         tags.map((tag,idx) => <span key={idx}><a href="">{tag}</a></span>)
+                        }
+                    </p>
                <div className="card-body">
                     <h2 className="card-title">{bookName}</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                         <button className="btn btn-primary">Buy Now</button>
+                    <p>By:{author}</p>
+                    <div className="card-actions flex justify-between">
+                         <h2 className="text-xl">{category}</h2>
+                         <h2><span>{rating}</span></h2>
                     </div>
                </div>
           </div>
      );
 };
+
+HomeCard.propTypes={
+  card : PropTypes.object
+}
 
 export default HomeCard;
