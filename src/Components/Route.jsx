@@ -1,12 +1,12 @@
-import React from 'react';
 import Navbar from './NavBar/Navbar';
-import Home from './NavBar/Pages.jsx/Home/Home';
 import { Outlet } from 'react-router-dom';
 
 const Route = () => {
      return (
           <div>
+               <div >
                <Navbar></Navbar>
+               </div>
                <div>
                     <Outlet></Outlet>
                </div>
