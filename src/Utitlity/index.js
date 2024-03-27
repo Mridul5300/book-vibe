@@ -34,7 +34,7 @@ export const saveCards = bookId => {
 export const getWhishcard = () => {
      
 
-     const storedWhishCard = localStorage.getItem('cards')
+     const storedWhishCard = localStorage.getItem('wishlist')
       
      if(storedWhishCard) {
           return JSON.parse(storedWhishCard)
@@ -50,10 +50,10 @@ export const saveWhislist = bookId => {
      const isExist = cardread.find(newCard => newCard  === bookId)
      if (!Exist && !isExist) {
           Whislistread.push (bookId)
-     localStorage.setItem('Whislists', JSON.stringify(Whislistread))
-          // toast ('Add Read List')
-          // return
-          console.log(Whislistread);
+     localStorage.setItem('wishlist', JSON.stringify(Whislistread))
+          toast ('Add Read List')
+          return
+          // console.log(Whislistread);
      }
 
      toast('Allready add')

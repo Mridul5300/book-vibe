@@ -19,6 +19,7 @@ const CardDetail = () => {
           }
 
           const  handleWhisRead = () => {
+            // console.log(cards);
               saveWhislist(idint)
           }
 

@@ -13,11 +13,13 @@ import Home from './Components/NavBar/Pages.jsx/Home/Home.jsx';
 import Booklisted from './Components/NavBar/Pages.jsx/List Book/Booklisted.jsx';
 import Readpage from './Components/NavBar/Pages.jsx/ReadBooks/Readpage.jsx';
 import CardDetail from './Components/NavBar/Pages.jsx/Home/Card Detail/CardDetail.jsx';
+import Error from './Components/EroorHandle/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Route />,
+    errorElement:<Error />,
     children:[
       {
         path:"/",
@@ -30,7 +32,8 @@ const router = createBrowserRouter([
       },
       {
         path:"/readpage",
-        element:<Readpage />
+        element:<Readpage />,
+        loader: () => fetch('/Card.json')
       },
       {
         path:'/homecard/:bookId',

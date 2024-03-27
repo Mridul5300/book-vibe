@@ -22,7 +22,7 @@ const Home = () => {
 						</h1>
 						<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start my-4">
 
-							<Link rel="noopener noreferrer" href="#" className="px-8 py-3 my-3 text-lg font-semibold border rounded bg-[#23BE0A] mx-3">View The List</Link>
+							<Link to={'/booklist'} rel="noopener noreferrer"  className="px-8 py-3 my-3 text-lg font-semibold border rounded bg-[#23BE0A] mx-3">View The List</Link>
 						</div>
 					</div>
 					<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">

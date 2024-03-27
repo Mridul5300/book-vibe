@@ -1,7 +1,8 @@
+
 import PropTypes from 'prop-types';
 
-const ReadLIst = ({card}) => {
-     const{image, title, bookName, author, yearOfpublishing,publisher,category,totalpages,rating} = card
+const Listofwish = ({cards}) => {
+     const{image, title, bookName, author, yearOfpublishing,publisher,category,totalpages,rating} = cards
      return (
           <div>
                <li className="flex  gap-5 my-10">
@@ -30,9 +31,7 @@ const ReadLIst = ({card}) => {
           </div>
      );
 };
-
-ReadLIst.propTypes={
-     card : PropTypes.object
+Listofwish.propTypes={
+     cards : PropTypes.object
    }
-
-export default ReadLIst;
+export default Listofwish;
