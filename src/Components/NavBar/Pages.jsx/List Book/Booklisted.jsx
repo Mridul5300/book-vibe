@@ -48,19 +48,45 @@ const Booklisted = () => {
           
           )
           setReadscard (sortedData);
+
           const sortedWish=[...wishlist].sort((a, b) =>
-               a.rating - b.rating
+               a.yearOfPublishing - b.yearOfPublishing
           
           )
           setWishlist (sortedWish);
      };
 
      const handlenumbarpage = ( ) => {
+          const sortedPage=[...Readscard].sort((a, b) =>
+               a.totalPages - b.totalPages
+          
+          )
+          setReadscard (sortedPage);
+
+          const sortedWishPage=[...wishlist].sort((a, b) =>
+               a.totalPages - b.totalPages
+          
+          )
+          
+          setWishlist (sortedWishPage);
 
      };
 
      const handlepublish= () =>{
+          const sortedPublis=[...Readscard].sort((a, b) =>
+               a.earOfPublishing  - b.earOfPublishingg 
+          
+          )
+          setReadscard (sortedPublis);
 
+          const sortedPublicPage=[...wishlist].sort((a, b) =>
+               a.yearOfPublishingg - b.yearOfPublishing
+          
+          )
+          
+          setWishlist (sortedPublicPage);
+
+     
      };
 
      return (
