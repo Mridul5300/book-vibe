@@ -1,6 +1,6 @@
-import React from 'react';
 
-const ReadLIst = ({card}) => {
+
+const whishList = ({card}) => {
      const{image, title, bookName, author, yearOfpublishing,publisher,category,totalpages,rating} = card
      return (
           <div>
@@ -31,4 +31,4 @@ const ReadLIst = ({card}) => {
      );
 };
 
-export default ReadLIst;
+export default whishList;
