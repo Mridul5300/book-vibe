@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveCards } from "../../../../../Utitlity";
-
+import { saveCards, saveWhislist } from "../../../../../Utitlity";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CardDetail = () => {
      const homecard = useLoaderData();
@@ -13,7 +14,12 @@ const CardDetail = () => {
 
           const handleReadMark = () => {
                // console.log(cards);
-               saveCards(bookId)
+              
+               saveCards(idint)
+          }
+
+          const  handleWhisRead = () => {
+              saveWhislist(idint)
           }
 
      return (
@@ -42,12 +48,14 @@ const CardDetail = () => {
                <li>Year of Publishing: : {cards.yearOfPublishing}</li>
                <li>Rating: : {cards.rating}</li>
               </ul>
-              <div>
+              <div className="gap-4">
                <button onClick={() => handleReadMark (cards)} className="btn">Read</button>
-               <button className="btn">Wishlist</button>
+               <button onClick={() => handleWhisRead (cards)} className="btn">Wishlist</button>
               </div>
             </div>
+            <ToastContainer />
           </div>
+          
         </div>
      );
 };
