@@ -36,12 +36,12 @@ const Booklisted = () => {
           }
 
           console.log(wishlist);
-     }, [])
-
+     }, []);
 
      const handleCheckboxChange = (event) => {
           setIsChecked(event.target.checked);
      };
+
      const handlesorting = () => {
           const sortedData=[...Readscard].sort((a, b) =>
                a.rating - b.rating
@@ -52,8 +52,17 @@ const Booklisted = () => {
                a.rating - b.rating
           
           )
-          setWishlist (sortedWish)
-     }
+          setWishlist (sortedWish);
+     };
+
+     const handlenumbarpage = ( ) => {
+
+     };
+
+     const handlepublish= () =>{
+
+     };
+
      return (
           <div>
                <div className="text-center bg-gray-300 mt-5">
@@ -64,7 +73,8 @@ const Booklisted = () => {
                          <div tabIndex={0} role="button" className="btn m-1">Hover</div>
                          <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                               <li><a onClick={handlesorting}>Rating</a></li>
-                              <li><a>Item 2</a></li>
+                              <li><a onClick={handlenumbarpage}>Numbar Of Pages</a></li>
+                              <li><a onClick={handlepublish}>Publish Year</a></li>
                          </ul>
                     </div>
                </div>
