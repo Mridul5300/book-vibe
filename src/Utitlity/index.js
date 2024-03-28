@@ -24,12 +24,12 @@ export const saveCards = bookId => {
           return
      }
 
-     toast('Allready add')
+     toast('Allready added List')
      return
 
 }
 
-// whise list
+// whise list...............
 
 export const getWhishcard = () => {
      
@@ -51,12 +51,12 @@ export const saveWhislist = bookId => {
      if (!Exist && !isExist) {
           Whislistread.push (bookId)
      localStorage.setItem('wishlist', JSON.stringify(Whislistread))
-          toast ('Add Read List')
+          toast ('Add Whish List')
           return
           // console.log(Whislistread);
      }
 
-     toast('Allready add')
+     toast('Allready added List')
      return
 
 }
