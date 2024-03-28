@@ -7,7 +7,7 @@ const Listofwish = ({ cards }) => {
      const { image, title, bookName,tags, author, yearOfPublishing, publisher, category,totalPages, rating } = cards
      return (
           <div>
-               <li className="flex  gap-5 my-10">
+               <div className="md:flex  flex-row  gap-5 my-10">
                     <div>
                          <img src={image} alt={title} />
                     </div>
@@ -34,7 +34,7 @@ const Listofwish = ({ cards }) => {
                               </button>
                          </div>
                     </div>
-               </li>
+               </div>
           </div>
      );
 };

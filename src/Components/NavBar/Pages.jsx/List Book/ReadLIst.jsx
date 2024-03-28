@@ -7,7 +7,7 @@ const ReadLIst = ({ card }) => {
      const { image, title, bookName, author,tags, yearOfPublishing, publisher, category, totalPages, rating } = card
      return (
           <div>
-               <li className="flex  gap-5 my-10">
+               <div className="md:flex flex-row  gap-5 my-10">
                     <div>
                          <img src={image} alt={title} />
                     </div>
@@ -34,7 +34,7 @@ const ReadLIst = ({ card }) => {
                               </button>
                          </div>
                     </div>
-               </li>
+               </div>
           </div>
      );
 };
